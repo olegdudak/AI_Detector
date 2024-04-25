@@ -4,10 +4,10 @@ import pandas as pd
 df = pd.read_csv("AI_Human.csv")
 
 # Вибираємо 3000 рядків з generated, які рівні 0.0
-df_0 = df[df['generated'] == 0.0].head(3000)
+df_0 = df[df['generated'] == 0.0].head(4000)
 
 # Вибираємо 2000 рядків з generated, які рівні 1.0
-df_1 = df[df['generated'] == 1.0].head(2000)
+df_1 = df[df['generated'] == 1.0].head(5000)
 
 # Додаємо стовпець "TEXT" зі значенням рядка до нового DataFrame
 df_0['TEXT'] = df_0['text']
